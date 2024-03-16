@@ -11,7 +11,7 @@ ignore_user_abort(true);
 //
 
 for (
-	$root_path  = __DIR__;
+	$root_path  = dirname(__DIR__);
 	$root_path != '/' && !is_file($root_path . DIRECTORY_SEPARATOR . 'composer.json');
 	$root_path  = realpath($root_path . DIRECTORY_SEPARATOR . '..')
 );
