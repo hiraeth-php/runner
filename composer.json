@@ -15,6 +15,9 @@
         "hiraeth/app": "^3.0",
         "hiraeth/http": "^3.0"
     },
+    "require-dev": {
+        "hiraeth/diactoros": "^3.0"
+    },
     "type": "opus-package",
     "extra": {
         "opus": {
