@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  php:
+    build: .
+    restart: unless-stopped
+    tty: ${TTY:-true}
+    ports:
+      - "80:80" # HTTP
+      - "443:443" # HTTPS
+      - "443:443/udp" # HTTP/3
+    volumes:
+      - ./caddy:/etc/caddy
+      - ../storage/caddy:/var/caddy
+      - ../:/app

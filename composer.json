@@ -1,0 +1,31 @@
+{
+    "name": "hiraeth/runner",
+    "description": "Run your Hiraeth application with Docker and FrankenPHP",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "license": "MIT",
+    "authors": [
+        {
+            "name":  "Matthew J. Sahagian",
+            "email": "matthew.sahagian@gmail.com",
+            "role":  "Lead Architect / Developer"
+        }
+    ],
+    "require": {
+        "hiraeth/app": "^3.0",
+        "hiraeth/http": "^3.0"
+    },
+    "type": "opus-package",
+    "extra": {
+        "opus": {
+            "hiraeth/app": {
+                "runner": ""
+            }
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "imarc/opus": true
+        }
+    }
+}

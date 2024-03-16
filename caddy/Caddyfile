@@ -1,0 +1,17 @@
+{
+	frankenphp {
+		worker /app/runner/boot.php
+	}
+
+    storage file_system {
+        root /var/caddy
+    }
+
+	order php_server before file_server
+}
+
+* {
+	root * /app/public/
+	tls internal
+	php_server
+}
