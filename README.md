@@ -26,7 +26,7 @@ touch extensions/<extension>
 For example:
 
 ```
-touch extensions/sqlite
+touch extensions/sqlite3
 ```
 
 Then re-run with:
